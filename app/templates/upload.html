@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Upload Test</title>
+<form method ="POST" action ="/">
+	{{ form.hidden_tag() }}
+	{{ form.file.label }} {{ form.file(size=60) }}
+	{{ form.csvfile.label }} {{ form.csvfile() }}
+	<br/>
+	<input type ="submit" value = "Go">
+</form>

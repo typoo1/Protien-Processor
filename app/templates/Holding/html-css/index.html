@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>ENMU Biochemistry</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="#load">Load</a></li>
+					<li><a href="#view">View</a></li>
+					<li><a href="#contact">Contact</a></li>
+                    <li><a href="#help">Help</a></li>
+				</ul>
+			</nav>
+
+		<!-- Top -->
+			<div class="wrapper style1 first">
+				<article class="container" id="top">
+					<div class="row">
+						<div class="4u 12u(mobile)">
+							<span class="image fit"><img src="images/enmu_greyhnd_logo.jpeg" alt="" /></span>
+						</div>
+						<div class="8u 12u(mobile)">
+							<header>
+								<h1><strong>Protein Assay Processor</strong></h1>
+							</header>
+							<p>This is a rapid, online assay processor for <strong>ENMU BioChem</strong>, Click the button below to get started or read the Help section if you aren't sure of what's going on.</p>
+                            <br><br><br><br>
+                            <footer>
+                                <center>
+                                    <a href="#load" class="button big scrolly">Get Started</a>
+                                </center>
+                            </footer>
+						</div>
+					</div>
+				</article>
+			</div>
+
+		<!-- Load -->
+			<div class="wrapper style2">
+				<article id="load">
+					<header>
+						<h2>Load your experimental data here.</h2>
+						<p>Feed me your .csv file, select your modifiers, and I'll analyze it for you!</p>
+                    </header>
+                    			
+					<p>
+                        <input type="file" onchange="getFile(this.file)">
+					<br></p>
+					
+					<form>
+						
+						<input type="checkbox" name="var1chk" onchange="toggleEnabled(this.checked)"/>
+						Edit this variable?
+						<div class="resizedTextbox">
+						<input type="textarea"name="var1" id="tb1" disabled/>
+						</div>
+						
+					</form>					
+					
+
+					<script>
+						function toggleEnabled(_checked){
+						document.getElementById('tb1').disabled = _checked ? false : true;
+						document.getElementById('tb1').value = "";
+						}
+					</script>
+	
+                    
+					<footer>
+						<p>Got your analysis all set?</p>
+						<a href="#view" class="button big scrolly">Go!</a>
+					</footer>
+				</article>
+			</div>
+
+		<!-- View -->
+			<div class="wrapper style3">
+				<article id="view">
+					<header>
+						<h2>View the previously generated data.</h2>
+						<p>This is where the assays that have been analyzed recently would reside.</p>
+					</header>
+                    
+                    <br><br><br><br><br><br><br><br>
+                    
+                    <!--
+					<div class="container">
+						<div class="row">
+							<div class="4u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+									<h3><a href="#">Magna feugiat</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<h3><a href="#">Veroeros primis</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<h3><a href="#">Lorem ipsum</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+						</div>
+						<div class="row">
+							<div class="4u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<h3><a href="#">Tempus dolore</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+									<h3><a href="#">Feugiat aliquam</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+							<div class="4u 12u(mobile)">
+								<article class="box style2">
+									<a href="#" class="image featured"><img src="images/pic06.jpg" alt="" /></a>
+									<h3><a href="#">Sed amet ornare</a></h3>
+									<p>Ornare nulla proin odio consequat.</p>
+								</article>
+							</div>
+						</div>
+					</div>
+                    -->
+					<footer>
+                        <!--
+						<p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p>
+						<a href="#contact" class="button big scrolly">Get in touch with me</a>
+                        -->
+					</footer>
+				</article>
+			</div>
+
+		<!-- Contact -->
+			<div class="wrapper style4">
+				<article id="contact" class="container 75%">
+					<header>
+						<h2>Problems?  Questions?  Comments?</h2>
+						<p>Contact us!</p>
+					</header>
+					<div>
+						<div class="row">
+							<div class="12u">
+								<form method="post" action="http://formspree.io/jordanbafordan@gmail.com">
+									<div>
+										<div class="row">
+											<div class="6u 12u(mobile)">
+												<input type="text" name="name" id="name" placeholder="Name" />
+											</div>
+											<div class="6u 12u(mobile)">
+												<input type="text" name="email" id="email" placeholder="Email" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<input type="text" name="subject" id="subject" placeholder="Subject" />
+											</div>
+										</div>
+										<div class="row">
+											<div class="12u">
+												<textarea name="message" id="message" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="row 200%">
+											<div class="12u">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" /></li>
+													<li><input type="reset" value="Clear Form" class="alt" /></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="row">
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; ENMU Biochemistry. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a> + Modifications.</li>
+						</ul>
+					</footer>
+				</article>
+			</div>
+    
+    			<div class="wrapper style">
+                    <article id="help">
+                        <header>
+                            <h1><strong>Need some help?</strong></h1>
+                            <p><strong>Not sure what's going on here?</strong></p>
+                        </header>
+                    
+                        <p><br><br><br><br><br><br><br><br><br><br></p>
+                        
+                        <footer>
+                        
+                        </footer>
+                    </article>
+                </div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
